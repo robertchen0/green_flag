@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Green Flag</string>
+    <string name="car_health_updates">Car Health Updates</string>
+    <string name="request_a_rescue_online">Request a rescue online</string>
+    <string name="policy_information">Policy information</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="next">Next</string>
+    <string name="your_password_should_have_a_minimum_of_8_characters_and_contain_at_least_one_number_one_uppercase_and_one_lowercase_letter_you_can_use_special_characters">Your password should have a minimum of 8 characters and contain at least one number, one uppercase and one lowercase letter. You can use special characters</string>
+    <string name="create_password">Create Password</string>
+    <string-array name="counties_array">
+            <item>Not-Specified</item>
+            <item>Malaysia</item>
+            <item>United States</item>
+            <item>Indonesia</item>
+            <item>France</item>
+            <item>Italy</item>
+            <item>Singapore</item>
+            <item>New Zealand</item>
+            <item>India</item>
+        </string-array>
+</resources>
+
