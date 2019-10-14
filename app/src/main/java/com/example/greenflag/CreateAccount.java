@@ -35,6 +35,10 @@ public class CreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        email = false;
+        pw = false;
+        cpw = false;
+
         if (getSupportActionBar() != null) {
             setTitle("Create Account");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -61,13 +65,21 @@ public class CreateAccount extends AppCompatActivity {
                     if (emailS.isEmpty()) {
                         error_email.setText("Email cannot be Blank!");
                         error_email.setVisibility(View.VISIBLE);
+                        error_email.setBackgroundResource(R.drawable.error_border);
+                        reg_email.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        reg_email.setBackgroundResource(android.R.drawable.editbox_background);
                         return;
                     }
                     if (isValid(emailS)) {
                         email = true;
+                        reg_email.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.tick2x,0);
+                        reg_email.setBackgroundResource(R.drawable.correct_border);
                     } else {
                         error_email.setText("Email not valid");
                         error_email.setVisibility(View.VISIBLE);
+                        error_email.setBackgroundResource(R.drawable.error_border);
+                        reg_email.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        reg_email.setBackgroundResource(android.R.drawable.editbox_background);
                     }
                 }
             }
@@ -84,18 +96,29 @@ public class CreateAccount extends AppCompatActivity {
                     if (pwS.isEmpty()) {
                         error_pw.setText("Password cannot be blank!");
                         error_pw.setVisibility(View.VISIBLE);
+                        error_pw.setBackgroundResource(R.drawable.error_border);
+                        reg_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        reg_password.setBackgroundResource(android.R.drawable.editbox_background);
                         return;
                     }
                     if (pwS.length() < 8) {
                         error_pw.setText("Password must be greater than 8 chars");
                         error_pw.setVisibility(View.VISIBLE);
+                        error_pw.setBackgroundResource(R.drawable.error_border);
+                        reg_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        reg_password.setBackgroundResource(android.R.drawable.editbox_background);
                         return;
                     }
                     if (isValidPassword(pwS)) {
+                        reg_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.tick2x,0);
+                        reg_password.setBackgroundResource(R.drawable.correct_border);
                         pw = true;
                     } else {
                         error_pw.setText("Password invalid");
                         error_pw.setVisibility(View.VISIBLE);
+                        error_pw.setBackgroundResource(R.drawable.error_border);
+                        reg_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        reg_password.setBackgroundResource(android.R.drawable.editbox_background);
                     }
                 }
             }
@@ -110,11 +133,16 @@ public class CreateAccount extends AppCompatActivity {
                 } else {
                     String pwS = reg_password.getText().toString();
                     String cpwS = confirm_password.getText().toString();
-                    if (!pwS.equals(cpwS)) {
+                    if (!pwS.equals(cpwS) || cpwS.isEmpty()) {
                         error_cpw.setText("Password does not Match!");
                         error_cpw.setVisibility(View.VISIBLE);
+                        error_cpw.setBackgroundResource(R.drawable.error_border);
+                        confirm_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+                        confirm_password.setBackgroundResource(android.R.drawable.editbox_background);
                         return;
                     } else {
+                        confirm_password.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.tick2x,0);
+                        confirm_password.setBackgroundResource(R.drawable.correct_border);
                         cpw = true;
                     }
                 }

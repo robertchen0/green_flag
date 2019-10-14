@@ -34,7 +34,8 @@
             android:layout_marginBottom="20dp"
             android:background="#FFFFFF"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            />
 
         <TextView
             android:id="@+id/error_email"
@@ -59,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginBottom="20dp"
-            android:background="#FFFFFF"
+            android:background="@android:drawable/editbox_background"
             android:ems="10"
             android:inputType="textPassword" />
 
@@ -87,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:layout_marginBottom="20dp"
-            android:background="#FFFFFF"
+            android:background="@android:drawable/editbox_background"
             android:ems="10"
             android:inputType="textPassword" />
 
