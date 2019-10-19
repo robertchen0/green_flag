@@ -160,10 +160,9 @@ public class CreateAccount extends AppCompatActivity {
                     email = true;
                     pw = true;
                     cpw = true;
-                    create_account.setOnClickListener(w -> {
                         Intent newActivity = new Intent(getApplicationContext(), AccountInformation.class);
                         startActivity(newActivity);
-                    });
+
                 }
                 else{
                     Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
