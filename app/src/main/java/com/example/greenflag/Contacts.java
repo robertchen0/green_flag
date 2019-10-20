@@ -10,12 +10,11 @@ public class Contacts implements Parcelable {
     private String Country;
     private String Gender;
     private String Address;
+    private int Avatar;
 
     public static Creator<Contacts> getCREATOR() {
         return CREATOR;
     }
-
-    private int Avatar;
 
     public int getAvatar() {
         return Avatar;

@@ -24,7 +24,7 @@ public class CustomViewHolder extends RecyclerView.ViewHolder {
         tv_gender = itemView.findViewById(R.id.gender);
         tv_address = itemView.findViewById(R.id.address);
         ivAvatar = itemView.findViewById(R.id.avatar);
-        ivAvatar.setImageResource(R.drawable.ic_android_black_24dp);
+
     }
     public void bindView(Contacts contact){
         if(contact != null){

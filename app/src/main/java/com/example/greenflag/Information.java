@@ -44,28 +44,28 @@ public class Information extends AppCompatActivity {
     }
 
     public void createContacts(){
-        Contacts contacts1 = new Contacts();
-        Contacts contacts2 = new Contacts();
-
-        contacts1.setName("Robert Chen");
-        contacts1.setUserName("username");
-        contacts1.setAddress("123 Somewhere");
-        contacts1.setBirthDate("123456789");
-        contacts1.setCountry("country");
-        contacts1.setGender("male");
-        contacts1.setAvatar((R.drawable.ic_android_black_24dp));
-
-        contacts2.setName("name");
-        contacts2.setUserName("username");
-        contacts2.setAddress("456 Somewhere");
-        contacts2.setBirthDate("1234534536789");
-        contacts2.setCountry("new country");
-        contacts2.setGender("female");
-        contacts2.setAvatar((R.drawable.ic_android_black_24dp));
+//        Contacts contacts1 = new Contacts();
+//        Contacts contacts2 = new Contacts();
+//
+//        contacts1.setName("Robert Chen");
+//        contacts1.setUserName("username");
+//        contacts1.setAddress("123 Somewhere");
+//        contacts1.setBirthDate("123456789");
+//        contacts1.setCountry("country");
+//        contacts1.setGender("male");
+//        contacts1.setAvatar((R.drawable.ic_android_black_24dp));
+//
+//        contacts2.setName("name");
+//        contacts2.setUserName("username");
+//        contacts2.setAddress("456 Somewhere");
+//        contacts2.setBirthDate("1234534536789");
+//        contacts2.setCountry("new country");
+//        contacts2.setGender("female");
+//        contacts2.setAvatar((R.drawable.ic_android_black_24dp));
 
         data = new ArrayList<>();
-        data.add(contacts1);
-        data.add(contacts2);
+//        data.add(contacts1);
+//        data.add(contacts2);
 
     }
 
